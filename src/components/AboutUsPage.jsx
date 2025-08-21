@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, ArrowRight, ArrowLeft, Zap, Users, TrendingUp, CheckCircle } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import Footer from './Footer'
+import logoImage from '../assets/itech logo.jpg'
+import teamImage from '../assets/image.png'
 
 const AboutUsPage = () => {
   const navigate = useNavigate()
@@ -19,7 +21,7 @@ const AboutUsPage = () => {
               onClick={() => navigate('/')}
               className="hover:opacity-80 transition-opacity"
             >
-              <img src="/src/assets/itech logo.jpg" alt="iTech Link Logo" className="w-24 h-24 object-contain" />
+              <img src={logoImage} alt="iTech Link Logo" className="w-24 h-24 object-contain" />
             </button>
           </div>
           
@@ -146,7 +148,7 @@ const AboutUsPage = () => {
              >
                                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="/src/assets/image.png" 
+                    src={teamImage} 
                     alt="iTech Link team of 11 professionals in business attire" 
                     className="w-full h-auto object-cover"
                   />

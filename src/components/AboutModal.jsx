@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
+import logoImage from '../assets/itech logo.jpg'
 
 const AboutModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null
@@ -154,7 +155,7 @@ const AboutModal = ({ isOpen, onClose }) => {
                       {/* Logo */}
                       <div className="mt-4 w-16 h-16 rounded-full border-2 border-red-500 flex items-center justify-center bg-white">
                         <img 
-                          src="/src/assets/itech logo.jpg" 
+                          src={logoImage} 
                           alt="iTech Logo" 
                           className="w-10 h-10 rounded-full object-cover"
                         />

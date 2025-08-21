@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Menu, Phone, Mail, MapPin } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import logoImage from '../assets/itech logo.jpg'
 
 const brandColors = {
   blue: '#44A9BF',
@@ -36,7 +37,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 mr-8">
           <button onClick={() => navigate('/')}>
-            <img src="/src/assets/itech logo.jpg" alt="ITECHLINK Logo" className="w-24 h-24 object-contain" />
+            <img src={logoImage} alt="ITECHLINK Logo" className="w-24 h-24 object-contain" />
           </button>
         </div>
         

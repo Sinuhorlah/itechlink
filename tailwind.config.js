@@ -15,7 +15,6 @@ module.exports = {
         sans: ['DM Sans', 'ui-sans-serif', 'system-ui'],
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/hero-bg.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))',
       },
